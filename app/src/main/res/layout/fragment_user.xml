@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.User.UserFragment"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+    //NIM : 10119085
+    //Nama : Arif Abdan Syakur
+    //Kelas : IF-3
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/greet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/fullnametitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap:"
+        android:textSize="15dp"
+        android:layout_below="@+id/greet"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/fullnametitle"
+        android:layout_below="@+id/greet"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/emailtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat Email:"
+        android:textSize="15dp"
+        android:layout_below="@+id/fullnametitle"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/emailtitle"
+        android:layout_below="@+id/fullname"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Logout"
+        android:textAlignment="center"
+        android:layout_below="@+id/emailtitle"
+        android:layout_marginTop="150dp"
+        android:background="@color/mocha"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"/>
+    </RelativeLayout>
+
+</FrameLayout>

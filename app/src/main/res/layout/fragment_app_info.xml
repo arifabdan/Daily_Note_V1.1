@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.App_Info.AppInfoFragment"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    //NIM : 10119085
+    //Nama : Arif Abdan Syakur
+    //Kelas : IF-3
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#DEA057"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/apin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Information"
+            android:gravity="center"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_logo"
+            android:layout_below="@+id/apin"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"/>
+
+
+        <TextView
+            android:id="@+id/tentang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version 1.1"
+            android:fontFamily="@font/poppins"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/logo"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/build_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dibuat Oleh : Arif Abdan Syakur"
+            android:gravity="center"
+            android:fontFamily="@font/poppins"
+            android:textSize="12dp"
+            android:textColor="#E0D8B0"
+            android:layout_below="@+id/tentang"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:id="@+id/classroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kelas : IF-3"
+            android:gravity="center"
+            android:fontFamily="@font/poppins"
+            android:textSize="12dp"
+            android:textColor="#E0D8B0"
+            android:layout_below="@id/build_by"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Pembuatan : 10 Agustus 2022"
+            android:gravity="center"
+            android:fontFamily="@font/poppins"
+            android:textSize="12dp"
+            android:textColor="#E0D8B0"
+            android:layout_below="@id/classroom"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

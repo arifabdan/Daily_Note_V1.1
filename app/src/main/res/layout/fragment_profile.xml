@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Profile.ProfileFragment"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="20dp">
+    //NIM : 10119085
+    //Nama : Arif Abdan Syakur
+    //Kelas : IF-3
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="20dp"
+        android:background="#DEA057"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="@string/profile"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            android:fontFamily="@font/poppins"/>
+
+      <ImageView
+          android:id="@+id/profile_image"
+          android:layout_width="100dp"
+          android:layout_height="150dp"
+          android:layout_centerVertical="true"
+          android:src="@drawable/crop1"/>
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:fontFamily="@font/poppins"
+            android:text="Arif Abdan Syakur"
+            android:textColor="#3E3D3D"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_below="@+id/nama"
+            android:fontFamily="@font/poppins"
+            android:text="arif.10119085@mahasiwa.unikom.ac.id"
+            android:textColor="#3E3D3D"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/nim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_below="@+id/email"
+            android:fontFamily="@font/poppins"
+            android:text="10119085"
+            android:textColor="#3E3D3D"
+            android:textSize="12dp" />
+        <TextView
+            android:id="@+id/kelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_below="@+id/nim"
+            android:fontFamily="@font/poppins"
+            android:text="IF3"
+            android:textColor="#3E3D3D"
+            android:textSize="12dp" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

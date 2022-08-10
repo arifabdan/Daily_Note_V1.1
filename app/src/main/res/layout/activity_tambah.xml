@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tambah"
+    android:theme="@style/AppTheme"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="#FCFFE7">
+    //NIM : 10119085
+    //Nama : Arif Abdan Syakur
+    //Kelas : IF-3
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Judul"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_edittext"
+        android:paddingLeft="5dp"/>
+
+    <EditText
+        android:id="@+id/tanggal"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/judul"
+        android:background="@drawable/round_edittext"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategori"
+        android:textSize="12dp"
+        android:layout_below="@id/judul"
+        android:layout_toRightOf="@id/tanggal"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"
+        />
+
+    <EditText
+        android:id="@+id/kategori"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_toRightOf="@+id/tanggal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_edittext"
+        android:paddingLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/title_isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Isi"
+        android:textSize="20dp"
+        android:layout_below="@+id/tanggal"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_isi"
+        android:background="@drawable/round_edittext"
+        android:gravity="top|left"
+        android:lines="10"
+        android:maxLines="15"
+        android:paddingLeft="5dp"
+        android:paddingTop="7dp"/>
+
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isi"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/tambah"
+        android:backgroundTint="@color/mocha"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"/>
+
+
+
+
+</RelativeLayout>
